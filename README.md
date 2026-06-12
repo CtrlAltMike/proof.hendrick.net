@@ -27,6 +27,16 @@ Suggested production route:
 - Static root: `proof-site`
 - CNAME file: included for GitHub Pages-style hosting
 
+## Squarespace DNS
+
+For a Squarespace-managed `hendrick.net` domain, add this custom DNS record:
+
+| Type | Host | Value |
+| --- | --- | --- |
+| `CNAME` | `proof` | `CtrlAltMike.github.io` |
+
+After DNS resolves, return to GitHub repo settings and enforce HTTPS for the Pages site.
+
 For Cloudflare Pages, use:
 
 - Build command: none
