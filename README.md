@@ -4,7 +4,15 @@ Static proof assets for Michael Hendrick.
 
 ## Current Pages
 
+- `/` - proof landing page with About summary and links to evidence.
 - `testimonials/` - selected colleague testimonials grouped by theme.
+- `certificates/` - SAFe certificates and Scrum Alliance profile context.
+
+## Published Certificate Assets
+
+- `certificates/assets/safe-agilist.pdf`
+- `certificates/assets/certified-safe-5-scrum-master.pdf`
+- `certificates/assets/certified-safe-4-devops-practitioner.pdf`
 
 ## Local Preview
 
