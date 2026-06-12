@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Testimonials | Michael Hendrick</title>
+    <meta
+      name="description"
+      content="Colleague testimonials for Michael Hendrick, focused on team leadership, Agile facilitation, communication, accountability, and blocker removal."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Testimonials | Michael Hendrick" />
+    <meta
+      property="og:description"
+      content="Selected colleague feedback on Michael Hendrick's team leadership, Agile facilitation, communication, accountability, and blocker removal."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://proof.hendrick.net/testimonials/" />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #eef3f2;
+        --paper: #ffffff;
+        --ink: #1f2528;
+        --muted: #5d6668;
+        --line: #d6dfdf;
+        --strong-line: #9dafaf;
+        --accent: #0d6b5f;
+        --accent-dark: #084c44;
+        --gold: #b48234;
+        --rust: #a84f35;
+        --blue: #345e87;
+        --shadow: 0 18px 45px rgba(31, 46, 50, 0.12);
+        --radius: 8px;
+        --max: 1120px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(238, 243, 242, 0.98)),
+          var(--bg);
+        color: var(--ink);
+        line-height: 1.55;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-color: rgba(13, 107, 95, 0.36);
+        text-underline-offset: 0.18em;
+      }
+
+      a:hover {
+        color: var(--accent-dark);
+        text-decoration-color: var(--accent-dark);
+      }
+
+      .page-shell {
+        min-height: 100vh;
+      }
+
+      .site-header {
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(12px);
+        position: sticky;
+        top: 0;
+        z-index: 20;
+      }
+
+      .nav {
+        align-items: center;
+        display: flex;
+        gap: 24px;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: var(--max);
+        padding: 16px 24px;
+      }
+
+      .brand {
+        display: grid;
+        gap: 0;
+      }
+
+      .brand strong {
+        font-size: 15px;
+        letter-spacing: 0;
+        line-height: 1.15;
+      }
+
+      .brand span {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.35;
+      }
+
+      .nav-links {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: flex-end;
+      }
+
+      .nav-links a {
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 650;
+        text-decoration: none;
+      }
+
+      .nav-links a:hover {
+        color: var(--accent-dark);
+      }
+
+      main {
+        margin: 0 auto;
+        max-width: var(--max);
+        padding: 56px 24px 64px;
+      }
+
+      .hero {
+        display: grid;
+        gap: 36px;
+        grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+        margin-bottom: 48px;
+      }
+
+      .hero h1 {
+        font-family:
+          Georgia, "Times New Roman", ui-serif, serif;
+        font-size: clamp(42px, 7vw, 84px);
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 0.96;
+        margin: 0 0 24px;
+        max-width: 880px;
+      }
+
+      .hero p {
+        color: #3f484a;
+        font-size: clamp(18px, 2vw, 22px);
+        margin: 0;
+        max-width: 760px;
+      }
+
+      .hero-card {
+        align-self: end;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 24px;
+      }
+
+      .hero-card dl {
+        display: grid;
+        gap: 18px;
+        margin: 0;
+      }
+
+      .hero-card dt {
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .hero-card dd {
+        font-size: 15px;
+        margin: 4px 0 0;
+      }
+
+      .source-note {
+        border-left: 3px solid var(--accent);
+        color: #465052;
+        font-size: 15px;
+        margin: 24px 0 0;
+        padding-left: 14px;
+      }
+
+      .theme-tabs {
+        align-items: center;
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 0 0 30px;
+        padding-bottom: 14px;
+      }
+
+      .theme-tabs button {
+        appearance: none;
+        background: transparent;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--muted);
+        cursor: pointer;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 750;
+        line-height: 1;
+        min-height: 36px;
+        padding: 10px 14px;
+      }
+
+      .theme-tabs button[aria-pressed="true"] {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: white;
+      }
+
+      .quote-grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .quote-card {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: 0 10px 26px rgba(31, 46, 50, 0.07);
+        display: flex;
+        flex-direction: column;
+        min-height: 260px;
+        padding: 22px;
+      }
+
+      .quote-card[data-hidden="true"] {
+        display: none;
+      }
+
+      .quote-card blockquote {
+        font-family:
+          Georgia, "Times New Roman", ui-serif, serif;
+        font-size: 20px;
+        line-height: 1.35;
+        margin: 0;
+      }
+
+      .quote-card figcaption {
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 13px;
+        margin-top: auto;
+        padding-top: 18px;
+      }
+
+      .quote-mark {
+        color: var(--gold);
+        display: block;
+        font-family:
+          Georgia, "Times New Roman", ui-serif, serif;
+        font-size: 42px;
+        line-height: 0.7;
+        margin-bottom: 10px;
+      }
+
+      .tag-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 16px;
+      }
+
+      .tag {
+        border: 1px solid rgba(13, 107, 95, 0.18);
+        border-radius: 999px;
+        color: var(--accent-dark);
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1;
+        padding: 6px 8px;
+        text-transform: uppercase;
+      }
+
+      .proof-band {
+        border-top: 1px solid var(--line);
+        display: grid;
+        gap: 24px;
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        margin-top: 56px;
+        padding-top: 42px;
+      }
+
+      .proof-band h2 {
+        font-family:
+          Georgia, "Times New Roman", ui-serif, serif;
+        font-size: clamp(30px, 4vw, 48px);
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 1.05;
+        margin: 0;
+      }
+
+      .proof-list {
+        display: grid;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .proof-list li {
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        list-style: none;
+        padding: 16px 18px;
+      }
+
+      .proof-list strong {
+        color: var(--ink);
+        display: block;
+        font-size: 15px;
+        margin-bottom: 4px;
+      }
+
+      .proof-list span {
+        color: var(--muted);
+        display: block;
+        font-size: 14px;
+      }
+
+      .page-footer {
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 13px;
+        margin: 0 auto;
+        max-width: var(--max);
+        padding: 22px 24px 40px;
+      }
+
+      @media (max-width: 900px) {
+        main {
+          padding-top: 38px;
+        }
+
+        .hero,
+        .proof-band {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-card {
+          align-self: auto;
+        }
+
+        .quote-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 620px) {
+        .nav {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .nav-links {
+          justify-content: flex-start;
+        }
+
+        .quote-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .quote-card {
+          min-height: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+          <a class="brand" href="#top" aria-label="Michael Hendrick testimonials">
+            <strong>Michael Hendrick</strong>
+            <span>Selected colleague testimonials</span>
+          </a>
+          <div class="nav-links" aria-label="Proof links">
+            <a href="#testimonials">Testimonials</a>
+            <a href="#themes">Themes</a>
+            <a href="https://www.linkedin.com/in/michaelhendrick/">LinkedIn</a>
+          </div>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="page-title">
+          <div>
+            <h1 id="page-title">How colleagues describe the work.</h1>
+            <p>
+              Selected feedback on team leadership, Agile facilitation, blocker removal,
+              communication, accountability, and the habits that help technical teams do
+              better work.
+            </p>
+            <p class="source-note">
+              These excerpts are drawn from peer feedback previously included on
+              Michael's LinkedIn profile. They are presented here as a concise proof
+              page for recruiters, hiring managers, and collaborators.
+            </p>
+          </div>
+
+          <aside class="hero-card" aria-label="Profile snapshot">
+            <dl>
+              <div>
+                <dt>Current focus</dt>
+                <dd>Technical project management, Scrum, Kanban, SAFe delivery, and practical AI-assisted workflows.</dd>
+              </div>
+              <div>
+                <dt>Signal</dt>
+                <dd>Team-centered leadership with enough structure to improve flow without adding unnecessary process.</dd>
+              </div>
+              <div>
+                <dt>Proof theme</dt>
+                <dd>Colleagues consistently mention listening, preparation, roadblock removal, and accountability.</dd>
+              </div>
+            </dl>
+          </aside>
+        </section>
+
+        <section id="testimonials" aria-labelledby="testimonials-title">
+          <div class="theme-tabs" id="themes" aria-label="Filter testimonials by theme">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="team">Team Leadership</button>
+            <button type="button" data-filter="agile">Agile Facilitation</button>
+            <button type="button" data-filter="blockers">Blockers</button>
+            <button type="button" data-filter="accountability">Accountability</button>
+          </div>
+
+          <div class="quote-grid" aria-live="polite">
+            <figure class="quote-card" data-tags="team">
+              <div class="tag-row"><span class="tag">Team leadership</span></div>
+              <span class="quote-mark" aria-hidden="true">"</span>
+              <blockquote>
+                I think the team is exceptionally lucky to have Michael. He cares about
+                them and wants them to be able to do their best work.
+              </blockquote>
+              <figcaption>Peer feedback, LinkedIn profile excerpt</figcaption>
+            </figure>
+
+            <figure class="quote-card" data-tags="agile team">
+              <div class="tag-row"><span class="tag">Agile facilitation</span><span class="tag">Teamwork</span></div>
+              <span class="quote-mark" aria-hidden="true">"</span>
+              <blockquote>
+                Michael does an outstanding job keeping team members engaged in the
+                scrum process and helping us stay busy.
+              </blockquote>
+              <figcaption>Peer feedback, LinkedIn profile excerpt</figcaption>
+            </figure>
+
+            <figure class="quote-card" data-tags="team agile">
+              <div class="tag-row"><span class="tag">Collaboration</span><span class="tag">Agile</span></div>
+              <span class="quote-mark" aria-hidden="true">"</span>
+              <blockquote>
+                He is always looking for opportunities for team members to work together
+                as a team.
+              </blockquote>
+              <figcaption>Peer feedback, LinkedIn profile excerpt</figcaption>
+            </figure>
+
+            <figure class="quote-card" data-tags="blockers">
+              <div class="tag-row"><span class="tag">Blocker removal</span></div>
+              <span class="quote-mark" aria-hidden="true">"</span>
+              <blockquote>
+                He is very good at listening and offering help to address roadblocks.
+              </blockquote>
+              <figcaption>Peer feedback, LinkedIn profile excerpt</figcaption>
+            </figure>
+
+            <figure class="quote-card" data-tags="accountability team">
+              <div class="tag-row"><span class="tag">Accountability</span><span class="tag">Team advocacy</span></div>
+              <span class="quote-mark" aria-hidden="true">"</span>
+              <blockquote>
+                I appreciate the way he seems to walk the line between advocating for
+                his team, while also pushing for accountability and results.
+              </blockquote>
+              <figcaption>Peer feedback, LinkedIn profile excerpt</figcaption>
+            </figure>
+
+            <figure class="quote-card" data-tags="agile blockers">
+              <div class="tag-row"><span class="tag">Cadence</span><span class="tag">Roadblocks</span></div>
+              <span class="quote-mark" aria-hidden="true">"</span>
+              <blockquote>
+                Shows up to every standup ready to ask intelligent questions about what
+                is slowing us down.
+              </blockquote>
+              <figcaption>Peer feedback, LinkedIn profile excerpt</figcaption>
+            </figure>
+
+            <figure class="quote-card" data-tags="team">
+              <div class="tag-row"><span class="tag">Communication</span><span class="tag">Focus</span></div>
+              <span class="quote-mark" aria-hidden="true">"</span>
+              <blockquote>
+                He takes ownership of many organizational communication tasks to allow
+                workers to focus on the technical work.
+              </blockquote>
+              <figcaption>Peer feedback, LinkedIn profile excerpt</figcaption>
+            </figure>
+
+            <figure class="quote-card" data-tags="team blockers">
+              <div class="tag-row"><span class="tag">Listening</span><span class="tag">Support</span></div>
+              <span class="quote-mark" aria-hidden="true">"</span>
+              <blockquote>
+                He tries to anticipate their needs, is a sympathetic and active listener,
+                and tries to understand what is often left unspoken.
+              </blockquote>
+              <figcaption>Peer feedback, LinkedIn profile excerpt</figcaption>
+            </figure>
+
+            <figure class="quote-card" data-tags="team agile">
+              <div class="tag-row"><span class="tag">Prepared teams</span><span class="tag">Camaraderie</span></div>
+              <span class="quote-mark" aria-hidden="true">"</span>
+              <blockquote>
+                Your team is impressive. They are well prepped, organized and executed.
+                There is great camaraderie, discussion, curiosity, and vision.
+              </blockquote>
+              <figcaption>Stakeholder feedback, LinkedIn profile excerpt</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="proof-band" aria-labelledby="themes-title">
+          <h2 id="themes-title">What the comments point to.</h2>
+          <ul class="proof-list">
+            <li>
+              <strong>Useful process, not process theater</strong>
+              <span>Agile cadence, dashboards, retrospectives, and blocker paths are treated as feedback systems.</span>
+            </li>
+            <li>
+              <strong>Team advocacy with delivery accountability</strong>
+              <span>The feedback consistently mentions support, listening, and clear expectations.</span>
+            </li>
+            <li>
+              <strong>Technical work protected from noise</strong>
+              <span>Communication and coordination are handled so technical contributors can stay focused.</span>
+            </li>
+            <li>
+              <strong>Small habits that compound</strong>
+              <span>Preparation, standup questions, visible blockers, and follow-through become durable team habits.</span>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <span>Michael Hendrick · Technical project management, Agile delivery, and AI-assisted workflows.</span>
+      </footer>
+    </div>
+
+    <script>
+      const filterButtons = document.querySelectorAll("[data-filter]");
+      const cards = document.querySelectorAll(".quote-card");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.dataset.filter;
+
+          filterButtons.forEach((item) => {
+            item.setAttribute("aria-pressed", String(item === button));
+          });
+
+          cards.forEach((card) => {
+            const tags = card.dataset.tags.split(" ");
+            const visible = filter === "all" || tags.includes(filter);
+            card.dataset.hidden = String(!visible);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
