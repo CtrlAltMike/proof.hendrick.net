@@ -202,6 +202,14 @@ main {
   max-width: 460px;
 }
 
+.source-note {
+  border-left: 3px solid var(--accent);
+  color: #465052;
+  font-size: 15px;
+  margin: 24px 0 0;
+  padding-left: 14px;
+}
+
 .card-grid {
   display: grid;
   gap: 16px;
@@ -282,6 +290,107 @@ main {
   color: var(--accent-dark);
 }
 
+.theme-tabs {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 30px;
+  padding-bottom: 14px;
+}
+
+.theme-tabs button {
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1;
+  min-height: 36px;
+  padding: 10px 14px;
+}
+
+.theme-tabs button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.quote-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.quote-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 26px rgba(31, 46, 50, 0.07);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 0;
+  padding: 22px;
+}
+
+.quote-card--feature {
+  grid-column: 1 / -1;
+  padding: 28px;
+}
+
+.quote-card[data-hidden="true"] {
+  display: none;
+}
+
+.quote-card .tag-row {
+  margin-bottom: 16px;
+}
+
+.quote-card blockquote {
+  font-family: Georgia, "Times New Roman", ui-serif, serif;
+  font-size: 20px;
+  line-height: 1.38;
+  margin: 0;
+}
+
+.quote-card--long blockquote,
+.quote-card--feature blockquote {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.quote-card--feature blockquote {
+  max-width: 940px;
+}
+
+.quote-card figcaption {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+.quote-mark {
+  color: var(--gold);
+  display: block;
+  font-family: Georgia, "Times New Roman", ui-serif, serif;
+  font-size: 42px;
+  line-height: 0.7;
+  margin-bottom: 10px;
+}
+
+.quote-card--long .quote-mark,
+.quote-card--feature .quote-mark {
+  font-size: 36px;
+}
+
 .proof-list {
   display: grid;
   gap: 12px;
@@ -310,6 +419,24 @@ main {
   font-size: 14px;
 }
 
+.proof-band {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  margin-top: 56px;
+  padding-top: 42px;
+}
+
+.proof-band h2 {
+  font-family: Georgia, "Times New Roman", ui-serif, serif;
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.05;
+  margin: 0;
+}
+
 .page-footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
@@ -325,7 +452,8 @@ main {
   }
 
   .hero,
-  .section {
+  .section,
+  .proof-band {
     grid-template-columns: 1fr;
   }
 
@@ -351,5 +479,13 @@ main {
 
   .content-card {
     min-height: 0;
+  }
+
+  .quote-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-card--feature {
+    grid-column: 1;
   }
 }
