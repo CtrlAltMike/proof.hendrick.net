@@ -39,6 +39,9 @@ a {
   color: inherit;
   text-decoration-color: rgba(13, 107, 95, 0.36);
   text-underline-offset: 0.18em;
+  transition:
+    color 160ms ease,
+    text-decoration-color 160ms ease;
 }
 
 a:hover {
@@ -96,10 +99,14 @@ a:hover {
   font-size: 13px;
   font-weight: 650;
   text-decoration: none;
+  transition:
+    color 160ms ease,
+    transform 160ms ease;
 }
 
 .nav-links a:hover {
   color: var(--accent-dark);
+  transform: translateY(-1px);
 }
 
 main {
@@ -147,6 +154,10 @@ main {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
 }
 
 .hero-card {
@@ -223,6 +234,12 @@ main {
   padding: 22px;
 }
 
+.content-card:hover {
+  border-color: rgba(13, 107, 95, 0.24);
+  box-shadow: 0 22px 48px rgba(31, 46, 50, 0.14);
+  transform: translateY(-2px);
+}
+
 .content-card h3 {
   font-size: 20px;
   letter-spacing: 0;
@@ -259,6 +276,9 @@ main {
   line-height: 1;
   padding: 6px 8px;
   text-transform: uppercase;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease;
 }
 
 .button-row {
@@ -279,6 +299,15 @@ main {
   min-height: 38px;
   padding: 10px 14px;
   text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
 }
 
 .button.primary {
@@ -313,6 +342,17 @@ main {
   line-height: 1;
   min-height: 36px;
   padding: 10px 14px;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.theme-tabs button:hover {
+  border-color: rgba(13, 107, 95, 0.32);
+  color: var(--accent-dark);
+  transform: translateY(-1px);
 }
 
 .theme-tabs button[aria-pressed="true"] {
@@ -337,6 +377,16 @@ main {
   margin: 0;
   min-height: 0;
   padding: 22px;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.quote-card:hover {
+  border-color: rgba(13, 107, 95, 0.2);
+  box-shadow: 0 16px 34px rgba(31, 46, 50, 0.1);
+  transform: translateY(-2px);
 }
 
 .quote-card--feature {
@@ -404,6 +454,16 @@ main {
   border-radius: var(--radius);
   list-style: none;
   padding: 16px 18px;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.proof-list li:hover {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(13, 107, 95, 0.2);
+  transform: translateX(2px);
 }
 
 .proof-list strong {
@@ -444,6 +504,67 @@ main {
   margin: 0 auto;
   max-width: var(--max);
   padding: 22px 24px 40px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes rise-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .site-header {
+    animation: rise-in 420ms ease both;
+  }
+
+  .hero h1,
+  .hero p,
+  .hero-card,
+  .section,
+  .theme-tabs,
+  .quote-card,
+  .proof-band,
+  .page-footer {
+    animation: rise-in 520ms ease both;
+  }
+
+  .hero p {
+    animation-delay: 80ms;
+  }
+
+  .hero-card,
+  .theme-tabs {
+    animation-delay: 120ms;
+  }
+
+  .section:nth-of-type(2),
+  .quote-card:nth-child(2n),
+  .proof-band {
+    animation-delay: 80ms;
+  }
+
+  .section:nth-of-type(3),
+  .quote-card:nth-child(3n),
+  .page-footer {
+    animation-delay: 140ms;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
 }
 
 @media (max-width: 900px) {
