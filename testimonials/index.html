@@ -226,7 +226,7 @@
       .quote-grid {
         display: grid;
         gap: 16px;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(6, minmax(0, 1fr));
       }
 
       .quote-card {
@@ -236,8 +236,20 @@
         box-shadow: 0 10px 26px rgba(31, 46, 50, 0.07);
         display: flex;
         flex-direction: column;
+        grid-column: span 2;
         min-height: 260px;
         padding: 22px;
+      }
+
+      .quote-card--medium,
+      .quote-card--long {
+        grid-column: span 3;
+      }
+
+      .quote-card--feature {
+        grid-column: 1 / -1;
+        min-height: 0;
+        padding: 28px;
       }
 
       .quote-card[data-hidden="true"] {
@@ -250,6 +262,16 @@
         font-size: 20px;
         line-height: 1.35;
         margin: 0;
+      }
+
+      .quote-card--long blockquote,
+      .quote-card--feature blockquote {
+        font-size: 18px;
+        line-height: 1.48;
+      }
+
+      .quote-card--feature blockquote {
+        max-width: 940px;
       }
 
       .quote-card figcaption {
@@ -268,6 +290,11 @@
         font-size: 42px;
         line-height: 0.7;
         margin-bottom: 10px;
+      }
+
+      .quote-card--long .quote-mark,
+      .quote-card--feature .quote-mark {
+        font-size: 36px;
       }
 
       .tag-row {
@@ -361,6 +388,16 @@
         .quote-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
+
+        .quote-card,
+        .quote-card--medium {
+          grid-column: span 1;
+        }
+
+        .quote-card--long,
+        .quote-card--feature {
+          grid-column: 1 / -1;
+        }
       }
 
       @media (max-width: 620px) {
@@ -376,6 +413,13 @@
 
         .quote-grid {
           grid-template-columns: 1fr;
+        }
+
+        .quote-card,
+        .quote-card--medium,
+        .quote-card--long,
+        .quote-card--feature {
+          grid-column: 1 / -1;
         }
 
         .quote-card {
@@ -446,7 +490,7 @@
           </div>
 
           <div class="quote-grid" aria-live="polite">
-            <figure class="quote-card" data-tags="team">
+            <figure class="quote-card quote-card--medium" data-tags="team">
               <div class="tag-row"><span class="tag">Team leadership</span></div>
               <span class="quote-mark" aria-hidden="true">"</span>
               <blockquote>
@@ -457,7 +501,7 @@
               <figcaption>Peer feedback, LinkedIn profile quote</figcaption>
             </figure>
 
-            <figure class="quote-card" data-tags="agile team">
+            <figure class="quote-card quote-card--long" data-tags="agile team">
               <div class="tag-row"><span class="tag">Agile facilitation</span><span class="tag">Teamwork</span></div>
               <span class="quote-mark" aria-hidden="true">"</span>
               <blockquote>
@@ -471,7 +515,7 @@
               <figcaption>Peer feedback, LinkedIn profile quote</figcaption>
             </figure>
 
-            <figure class="quote-card" data-tags="team agile">
+            <figure class="quote-card quote-card--medium" data-tags="team agile">
               <div class="tag-row"><span class="tag">Collaboration</span><span class="tag">Agile</span></div>
               <span class="quote-mark" aria-hidden="true">"</span>
               <blockquote>
@@ -491,7 +535,7 @@
               <figcaption>Peer feedback, LinkedIn profile quote</figcaption>
             </figure>
 
-            <figure class="quote-card" data-tags="accountability team">
+            <figure class="quote-card quote-card--medium" data-tags="accountability team">
               <div class="tag-row"><span class="tag">Accountability</span><span class="tag">Team advocacy</span></div>
               <span class="quote-mark" aria-hidden="true">"</span>
               <blockquote>
@@ -503,7 +547,7 @@
               <figcaption>Peer feedback, LinkedIn profile quote</figcaption>
             </figure>
 
-            <figure class="quote-card" data-tags="agile blockers">
+            <figure class="quote-card quote-card--long" data-tags="agile blockers">
               <div class="tag-row"><span class="tag">Cadence</span><span class="tag">Roadblocks</span></div>
               <span class="quote-mark" aria-hidden="true">"</span>
               <blockquote>
@@ -516,7 +560,7 @@
               <figcaption>Peer feedback, LinkedIn profile quote</figcaption>
             </figure>
 
-            <figure class="quote-card" data-tags="team">
+            <figure class="quote-card quote-card--medium" data-tags="team">
               <div class="tag-row"><span class="tag">Culture</span><span class="tag">Character</span></div>
               <span class="quote-mark" aria-hidden="true">"</span>
               <blockquote>
@@ -527,7 +571,7 @@
               <figcaption>Peer feedback, LinkedIn profile quote</figcaption>
             </figure>
 
-            <figure class="quote-card" data-tags="team blockers">
+            <figure class="quote-card quote-card--feature" data-tags="team blockers">
               <div class="tag-row"><span class="tag">Listening</span><span class="tag">Support</span></div>
               <span class="quote-mark" aria-hidden="true">"</span>
               <blockquote>
